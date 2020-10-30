@@ -23,7 +23,9 @@ function getInfo() {
 		if(username == objPeople[i].username && password == objPeople[i].password) {
             console.log(username + " is logged in!!!")
             var LoginMessage = document.getElementById("login");
-            LoginMessage.style.display = "block";
+			LoginMessage.style.display = "block";
+			var loginPage = document.getElementById("Block");
+            loginPage.style.display = "none";
 			// stop the function if this is found to be true
 			return
 		}
